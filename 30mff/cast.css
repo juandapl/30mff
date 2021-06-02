@@ -1,0 +1,105 @@
+.gridcontainer
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.4em;
+    row-gap: 0.4em;
+    height: 85vh;
+}
+@media screen and (max-width: 850px) 
+{
+    .gridcontainer
+    {
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
+    .item
+    {
+        height: min-content;
+    }
+}
+
+/* .elem1
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position:relative;
+}
+.elem2
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position:relative;
+}
+.elem3
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position:relative;
+}
+.elem4
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position:relative;
+
+} */
+.elem
+{
+    position: relative;
+}
+.item
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+.tag
+{
+    background-color: white;
+    z-index: 1;
+    width: max-content;
+    position: absolute;
+    bottom: 0px;
+}
+span.intag
+{
+    padding-left: 0.4em;
+    padding-right: 0.9em;
+    padding-bottom: 0.4em;
+    font-size: 1.5em;
+}
+img.intag
+{
+    width: 0.9em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.3em;
+}
+.overlay
+{
+    background-color: white;
+    opacity: 0.85;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    padding: 1.4em;
+    display: none;
+}
+p
+{
+    font-size: 1.4em;
+}

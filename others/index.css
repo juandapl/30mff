@@ -1,0 +1,27 @@
+h1{
+    font-family: 'League Spartan';
+    text-align: center;
+    color: white;
+}
+div.text{
+    background-color: white;
+}
+div{ 
+    width: 40%;
+    margin: 15px auto 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+p, span{
+    font-family: 'Glacial Indifference';
+}
+body{
+    background-color: #272727;
+}
+a{
+    color:salmon;
+}
+img{
+    width: 40%;
+}

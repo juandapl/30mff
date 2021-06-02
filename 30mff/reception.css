@@ -1,0 +1,96 @@
+.gridcontainer
+{
+    width: 80%;
+    height: 85vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.4em;
+    column-gap: 0.4em;
+}
+
+@media screen and (max-width: 850px) 
+{
+    .gridcontainer
+    {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .item
+    {
+        height: min-content;
+    }
+}
+
+.pic
+{
+    position: relative;
+}
+.item
+{
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4B9CD9;
+    position: relative;
+    height: fit-content;
+    padding: 1.4em;
+    padding-bottom: 0em;
+}
+.img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.reviewer
+{
+    font-family: "wildy_sansregular";
+    color: #4B9CD9;
+    font-size: 1.4em;
+    text-align: center;
+}
+.tag
+{
+    background-color: white;
+    z-index: 1;
+    width: max-content;
+    position: absolute;
+    bottom: 0px;
+    
+}
+.revtag
+{
+    transform: translateX(-1.4em);
+}
+
+span.intag
+{
+    padding-left: 0.4em;
+    padding-right: 0.9em;
+    padding-bottom: 0.4em;
+    font-size: 1.5em;
+}
+img.intag
+{
+    width: 0.9em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.3em;
+
+}
+p{
+    text-align: center;
+}
+.overlay
+{
+    background-color: white;
+    opacity: 0.85;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    padding: 1.4em;
+    display: none;
+}
