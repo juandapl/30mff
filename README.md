@@ -15,5 +15,6 @@ While the _realistic_ part of the website was attempted through the general elem
 Regarding the positioning of the elements, I wanted to emulate the gallery view of Zoom calls. I did this by **over**using the `display:grid` environment, including some media queries to adapt the size of the grid to smaller screen sizes. I also added icons and names of reviewers and castmembers as they would appear on Zoom: as a small box in the corner of the image. This also gave me the opportunity to add some interactivity to the site: the first view the user encounters in some of the pages is a grid of photos, but when hovering the mouse over them the user can discover an extended description. This allowed me to enter more information into the site without affecting the simple Zoom-like layout.
 
 **Evaluation**
+
 Most of my expectations were met by the process. Although the website doesn't boast complex animations and over-the-top interactive elements, I think it achieves the goal of creating a light-hearted, simple experience. There are some tiny loose ends in terms of alignment and text sizing - I hope to get better at those with time!
 
