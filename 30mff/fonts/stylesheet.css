@@ -11,6 +11,9 @@
 .header
 {
     z-index: 1000000;
+    background-color: white;
+    opacity: 0.9;
+    margin-bottom: 1em;
 }
 h1 {
     font-family: "wildy_sansregular";
@@ -32,11 +35,13 @@ div.menuwrapper
 }
 div.main-content
 {
+    padding-top: 2em;
     width: 80%;
     margin: auto;
     text-align: center;
     background-color: white;
     opacity: 0.9;
+    padding-bottom: 2em;
 }
 .blueclickable{
     font-family: "wildy_sansregular";
@@ -61,13 +66,17 @@ p, span{
 }
 img.ff
 {
-    width: 18%;
+    width: 16%;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    padding-bottom: 2em;
 }
 body{
+    /* found a really cool tool to generate the patterns. all credit for this goes to https://www.magicpattern.design/tools/css-backgrounds */
     margin: 0px;
+    background-color: #dbebf7;
+    opacity: 1;
+    background-image: radial-gradient(#4B9CD9 1.55px, #dbebf7 1.55px);
+    background-size: 31px 31px;
 }
 
 hr{
@@ -83,4 +92,16 @@ hr{
     top: 50%;
     transform: translateY(50%);
     padding: 0.4em;
+}
+p.teaser
+{
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+}
+p.teaser2
+{
+    font-size: 2em;
+    font-style: normal;
+    text-align: center;
 }

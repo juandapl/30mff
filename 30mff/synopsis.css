@@ -8,6 +8,7 @@
     margin: auto;
 }
 
+/* breakpoint for small screens */
 @media screen and (max-width: 768px) 
 {
     .gridcontainer
@@ -27,6 +28,7 @@
     grid-row-start: 1;
     grid-row-end: 4;
 }
+/* this vertically centers the synopsis using grid properties */
 .central
 {
     grid-column-start: 2;

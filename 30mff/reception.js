@@ -1,3 +1,4 @@
+// selects all pictures from the grid, enables hover overlay effect
 const pics = document.querySelectorAll(".pic");
 
 for(var i = 0; i < pics.length; i++)
