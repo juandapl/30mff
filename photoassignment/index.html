@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>story in three pictures</title>
+        <link rel="stylesheet" href="../fonts/gi/stylesheet.css">
+    </head>
+    <body>
+        <h1 id="title">a new friend</h1>
+        <div class="flex">
+            <div class="container" id="c1">
+                <img src="assets/4.jpg">
+            </div>
+            <div class="container" id="c2">
+                <img src="assets/5.jpg">
+            </div>
+            <div class="container" id="c3">
+                <img src="assets/3.jpg">
+            </div>
+        </div>
+        <input type="button" id="shuffle" value="shuffle">
+        <p id="bottom">documentation of pavlos and a random dog in manali, 2020</p>
+    </body>
+    <style>
+        .flex{
+            width: 100%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        div.container
+        {
+            flex: 1 1 0px;
+            margin: 1%;
+        }
+        img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+        #shuffle
+        {
+            border-style: solid;
+            border-color: white;
+            background-color: #272727;
+            font-family: "glacial_indifferenceregular";
+            padding: 1.4em;
+            font-size: 1.3em;
+            color: white;
+            display: block;
+            margin: auto;
+        }
+        body{
+            background-color: #272727;
+        }
+        h1
+        {
+            font-family: "glacial_indifferenceregular";
+            text-align: center;
+            color: white;
+            font-style: normal;
+            font-size: 3em;
+        }
+        #bottom
+        {
+            text-align: center;
+            font-family: "glacial_indifferenceregular";
+            color:dimgray;
+            font-size: 0.7em;
+        }
+    </style>
+    <script>
+        var shuffled = 0;
+        var button = document.getElementById("shuffle");
+        var title = document.getElementById("title");
+        var d1 = document.getElementById("c1");
+        var d2 = document.getElementById("c2");
+        var d3 = document.getElementById("c3");
+        function shuffle()
+        {
+            if(shuffled == 0)
+            {
+                title.innerHTML = "an old friend";
+                d1.innerHTML = `<img src="assets/3.jpg">`
+                d2.innerHTML = `<img src="assets/5.jpg">`
+                d3.innerHTML = `<img src="assets/4.jpg">`
+            }
+            else
+            {
+                title.innerHTML = "a new friend";
+                d1.innerHTML = `<img src="assets/4.jpg">`
+                d2.innerHTML = `<img src="assets/5.jpg">`
+                d3.innerHTML = `<img src="assets/3.jpg">`
+            }
+            shuffled = (shuffled+1)%2;
+        }
+        button.onclick = shuffle;
+        button.onmouseenter = function() {
+            button.style.color = "#272727";
+            button.style.backgroundColor = "white";
+        };
+        button.onmouseleave = function()
+        {
+            button.style.color = "white";
+            button.style.backgroundColor = "#272727";
+        }
+            </script>
+</html>
