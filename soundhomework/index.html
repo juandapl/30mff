@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Landing</title>
+    </head>
+    <body>
+        <div id="full">
+            <img id="plane" class="grayscale" src="plane.jpg">
+        </div>
+    </body>
+    <style>
+        .grayscale
+        {
+            filter: grayscale(1);
+        }
+        #full
+        {
+            width: 100%;
+            height: 100vw;
+        }
+        img
+        {
+            width: 100%;
+            object-fit: cover;
+        }
+        body
+        {
+            overflow: hidden;
+            margin: 0;
+        }
+    </style>
+    <script>
+        let sound = new Audio("audio.mp3");
+        let plane = document.getElementById("plane");
+        plane.addEventListener("click", function() {
+            if(plane.classList.contains("grayscale"))
+            {
+                document.getElementById("plane").classList.remove("grayscale");
+                sound.play();
+            }
+            else
+            {
+                document.getElementById("plane").classList.add("grayscale");
+                sound.pause();
+            }
+        });
+        sound.ontimeupdate = function() {if(sound.currentTime > 18)
+        {
+            plane.src = "park.jpg";
+        }
+    };
+    </script>
+</html>
