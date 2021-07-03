@@ -1,5 +1,4 @@
-# juandapl.github.io
-Juan's CommLab (and beyond?) site
+Juan's 30MFF website: an assignment for Communications Lab
 
 # Assignment 1: 30mff website - "Getting Ready For Zoom"
 **Project Description**
